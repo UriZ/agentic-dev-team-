@@ -79,6 +79,8 @@ architect ──► JUDGE GATE ──► developer ──► JUDGE GATE ──�
 
 If a judge gate **FAILs**, work is sent back to the responsible agent with specific feedback. The TL does NOT override judge decisions without user approval.
 
+**After every judge gate PASSES**: apply retro improvements from the judge and agent insights BEFORE moving to the next pipeline stage. This is not optional — update agent definitions, CLAUDE.md, criteria.md as needed, and log what was applied in SESSION_LOG.md.
+
 ### Judge System
 
 The judge is a separate agent (`.claude/agents/judge.md`) that evaluates work quality at pipeline gates.
