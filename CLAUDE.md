@@ -61,23 +61,24 @@ BACKLOG.md (user adds items)
 TL picks item → creates GitHub issue with acceptance criteria
     │
     ▼
-architect ──► JUDGE GATE ──► developer ──► JUDGE GATE ──► qa ──► JUDGE GATE
-                                                                      │
-                                                              security (if needed)
-                                                                      │
-                                                              FINAL JUDGE GATE
-                                                                      │
-                                                                    done
+architect ──► JUDGE GATE ──► developer ──► CODE REVIEW ──► JUDGE GATE ──► qa ──► JUDGE GATE
+                                                                                                │
+                                                                                        security (if needed)
+                                                                                                │
+                                                                                        FINAL JUDGE GATE
+                                                                                                │
+                                                                                              done
 ```
 
 1. **Architect designs** — creates spec, posts to GitHub issue
 2. **Judge evaluates architect output** — checks spec completeness, no scope creep, clear interfaces
-3. **Developer implements** — builds from spec, relabels issue to `qa`
-4. **Judge evaluates developer output** — checks implementation matches spec, builds, tests pass
-5. **QA verifies** — tests the implementation, files bugs if found
-6. **Judge evaluates QA output** — checks test coverage, bug reports actionable
-7. **Security audits** (when applicable) — reviews code for vulnerabilities
-8. **Final judge gate** — evaluates the complete feature against acceptance criteria
+3. **Developer implements** — builds from spec
+4. **Code review** — senior-developer reviews code using the `code-review` skill. Developer addresses "must fix" items before proceeding
+5. **Judge evaluates developer output** — checks implementation matches spec, builds, tests pass
+6. **QA verifies** — tests the implementation, files bugs if found
+7. **Judge evaluates QA output** — checks test coverage, bug reports actionable
+8. **Security audits** (when applicable) — reviews code for vulnerabilities
+9. **Final judge gate** — evaluates the complete feature against acceptance criteria
 
 If a judge gate **FAILs**, work is sent back to the responsible agent with specific feedback. The TL does NOT override judge decisions without user approval.
 
