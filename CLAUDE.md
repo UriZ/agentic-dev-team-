@@ -23,6 +23,8 @@
 - apply critical thinking. don't tell me what i want to hear
 - read existing code before modifying it — never blind-edit
 - work in small chunks — one logical change at a time; small prs
+- **never bypass problems** — if something is broken (permissions, tests, builds), diagnose the root cause and fix it. Do not work around it, do not do the task manually instead, do not skip steps. Fix the system so it works correctly going forward.
+- **never break the pipeline** — follow every step of the pipeline in order. Don't skip judge gates, don't skip retros, don't skip session logging. If a step fails, fix the step, don't skip it.
 
 ## Team Agents
 
