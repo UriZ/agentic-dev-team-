@@ -25,6 +25,7 @@
 - work in small chunks — one logical change at a time; small prs
 - **never bypass problems** — if something is broken (permissions, tests, builds), diagnose the root cause and fix it. Do not work around it, do not do the task manually instead, do not skip steps. Fix the system so it works correctly going forward.
 - **never break the pipeline** — follow every step of the pipeline in order. Don't skip judge gates, don't skip retros, don't skip session logging. If a step fails, fix the step, don't skip it.
+- **every implementation includes tests** — if no test runner is configured, set one up as part of the task. Pure-logic modules (validation, rate limiting, error handling) must have unit tests. No PR without tests.
 
 ## Team Agents
 

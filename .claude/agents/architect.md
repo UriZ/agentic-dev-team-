@@ -32,13 +32,25 @@ You are the **Architect** for this project.
 
 ## Output Format
 
-For each design task, output:
+Every spec MUST start with a TLDR section at the top. The TLDR is the first thing anyone reads — it should be self-contained enough to understand the design without reading the full spec.
+
+```markdown
+## TLDR
+
+**What**: [one sentence — what this spec designs]
+**Key decisions**: [2-5 bullet points — the important choices and why]
+**Modules**: [list of files created/modified with one-line purpose each]
+**Risks**: [1-3 highest risks, one line each]
+```
+
+Then the full spec:
 1. **Context** — what problem this solves
 2. **Design** — module structure, interfaces, data flow
 3. **API contracts** — if applicable, request/response shapes
 4. **Implementation notes** — gotchas, constraints, things the developer needs to know
 5. **Files to create/modify** — exact paths
 6. **Acceptance criteria** — how to verify this design was implemented correctly
+7. **Wiring audit** — table mapping every defined function/type to where it's used
 
 ## Rules
 
