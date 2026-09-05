@@ -73,8 +73,9 @@ architect ──► JUDGE GATE ──► developer ──► CODE REVIEW ──�
 1. **Architect designs** — creates spec, posts to GitHub issue
 2. **Judge evaluates architect output** — checks spec completeness, no scope creep, clear interfaces
 3. **Developer implements** — builds from spec
-4. **Code review** — senior-developer reviews code using the `code-review` skill. Developer addresses "must fix" items before proceeding
-5. **Judge evaluates developer output** — checks implementation matches spec, builds, tests pass
+4. **Code review** — senior-developer reviews code using the `code-review` skill. Posts findings with "must fix" vs "nice to have" classification
+5. **Developer addresses code review** — a developer agent receives the code review findings and fixes all "must fix" items. TL does NOT fix code review items — the developer does
+6. **Judge evaluates developer output** — checks implementation matches spec, builds, tests pass, code review "must fix" items resolved
 6. **QA verifies** — tests the implementation, files bugs if found
 7. **Judge evaluates QA output** — checks test coverage, bug reports actionable
 8. **Security audits** (when applicable) — reviews code for vulnerabilities
