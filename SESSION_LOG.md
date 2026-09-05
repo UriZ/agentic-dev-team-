@@ -1,35 +1,24 @@
 # Session Log
 
 <!--
-This is the project's activity log. Every agent appends entries here.
-The TL captures agent TLDRs verbatim and adds retrospective notes.
+Activity log. Every agent appends here. TL captures TLDRs and retro notes.
 
-## Format Guide
+## Entry formats:
 
-### Iteration structure:
+### [YYYY-MM-DD] — agent-role — #issue
+**Task**: one-line description
+**Result**: COMPLETED / PARTIAL / FAILED
+**Key decisions/changes**: bullet points
+**Improvement Insights**: suggestions for agent defs, CLAUDE.md, criteria.md
 
-## Iteration N: [Title]
+### [YYYY-MM-DD] — judge — #issue (role)
+**Gate type**: per-agent (role)
+**Verdict**: PASS / FAIL
+**Score**: N/10
+**Key gaps**: specific shortcomings
+**Improvement Insights**: suggestions
 
-### Phase N: [Phase Name]
-
-**[Sender → Receiver agent]**
-- **Agent type**: `type`
-- **Task**: description
-- **GitHub issues**: #N, #M
-
-**[Agent → Team Lead] — COMPLETED/FAILED**
-- **Agent TLDR**: [agent's own summary — captured verbatim, not paraphrased]
-
-### Judge Gate
-- **Verdict**: PASS / FAIL
-- **Gaps**: [if any]
-
-### Retrospective
-- **Improvement applied**: [what was changed and where]
-- **Improvement rejected**: [what was suggested and why it was rejected]
-
-### Task List Snapshot
-| Issue | Title | Status | Owner |
-|-------|-------|--------|-------|
-| #1 | ... | open/closed | ... |
+### Retrospective — phase description
+**Applied**: what was changed and where
+**Rejected**: what was suggested and why
 -->
